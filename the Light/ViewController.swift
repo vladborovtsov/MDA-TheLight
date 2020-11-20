@@ -20,11 +20,11 @@ class ViewController: UIViewController {
     self.view.backgroundColor = isLightOn ? .white : .black
   }
   
-  @IBAction func buttonPressed() {
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     isLightOn.toggle();
     updateUI();
   }
-  
+    
   override var prefersStatusBarHidden: Bool {
     return true
   }
