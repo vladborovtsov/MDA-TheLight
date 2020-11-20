@@ -5,4 +5,4 @@ the homework done in context of MDA iOS course
 
 ## Screenshots 
 
-![white](https://github.com/vladborovtsov/MDA-TheLight/blob/main/Screenshots/IMG_4816.PNG)
+<img src="https://github.com/vladborovtsov/MDA-TheLight/blob/main/Screenshots/IMG_4816.PNG" width="18%">/<img>
