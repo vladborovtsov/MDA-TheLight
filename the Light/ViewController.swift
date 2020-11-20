@@ -9,7 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
-  var isLightOn: Bool = true
+  var mode = 0;
+  let colors = [
+    UIColor.white,
+    UIColor.red,
+    UIColor.yellow,
+    UIColor.green,
+    UIColor.black
+  ]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -17,11 +24,14 @@ class ViewController: UIViewController {
   }
 
   fileprivate func updateUI() {
-    self.view.backgroundColor = isLightOn ? .white : .black
+    self.view.backgroundColor = colors[mode];
   }
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-    isLightOn.toggle();
+    mode += 1;
+    if mode == colors.count {
+      mode=0;
+    }
     updateUI();
   }
     
